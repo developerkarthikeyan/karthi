@@ -12,7 +12,7 @@ function convert(){
     let final=cie1o+cie2o+cie3o+moodle+assignment+attendance
     let result=document.getElementById("result")
     let span=document.createElement('p');
-    console.log(span)
+
     result.appendChild(span);
-    span.innerText="Your  Internal Mark is :"+final;
+    span.innerText="Your Internal Mark is :"+final;
     }
