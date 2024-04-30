@@ -4,19 +4,26 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #6a52a5, #4c5f93);
 }
+span{
+    color: #FFD700;
+}
+
+
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
- 
+   
+    width: 450px;
+    height: 100vh;
 }
 
 .title {
     margin: 0;
     font-size: 24px;
-    text-align: right;
+    text-align: c;
 }
 
 .input-container {
@@ -24,16 +31,26 @@ body {
     flex-direction: column; /* Change from 'row' to 'column' */
     gap: 10px;
      padding: 40px;
+     width: 100vw;
+     height: 100vh;
+align-items: center;
+position: absolute;
+left: -5%;
+
 }
 
 .input-box {
+    margin-left: 1rem;
     margin-top: 30px;
-    width: 350px;
-    height: 30px;
+    width: 30rem;
+    height: 35px;
     padding: 10px;
     border: 1px solid #ccc;
     animation: slideIn 0.5s ease-out;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    left: 50%;
 }
 
 @keyframes slideIn {
@@ -54,7 +71,39 @@ button{
     padding: 20px;
 border-radius: 10px;
 background-color: gold;
+width: 10rem;
 }
-.result{
+p{
     color: white;
+    font-size: 25px;
+    border: 1px solid palegreen;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    color:gold;
+  
+}
+
+@media only screen and (max-width: 768px) {
+    /* CSS rules for screens with a width of 767 pixels or less (typical for mobile devices) */
+    .input-box{
+     overflow-x: hidden;
+     width: 300px;
+     margin-left: 1rem;
+    }
+    .input-container{
+        margin-left: -8.6rem;
+        left: 25%;
+    }
+    button{
+        margin-top: 1rem;
+        width: 300px;
+        margin-left: 1.6rem;
+    }
+.result{
+     position: absolute;
+ top: 720px;
+ margin-top: 2rem;
+ left:24% ;
+ font-size: 1.5rem;
+    }
 }
