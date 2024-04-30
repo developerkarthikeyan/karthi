@@ -9,24 +9,20 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Calculate Your Internals Here</h1>
-        <marquee>Alert according to your moodle and Assignment mark difference make ths value to real may be 1 or 2 mark will differ</marquee>
         <div class="input-container">
-            <input type="text" class="input-box" placeholder="Enter Your CIE1 Mark" id="CIE1">
-            <input type="text" class="input-box" placeholder="Enter Your CIE2 Mark" id="CIE2">
-            <input type="text" class="input-box" placeholder="Enter Your CIE3 Mark" id="CIE3">
-            <input type="text" class="input-box" placeholder="Enter your Moodle Mark" id="Moodle">
-            <input type="text" class="input-box" placeholder="Enter Your Assignment Mark" id="Assignment mark">
+            <h1 class="title">Calculate Your <span>Internals Here</span></h1>
+             
+            <input type="number" class="input-box" placeholder="Enter Your CIE1 Mark" id="CIE1">
+            <input type="number"" class="input-box" placeholder="Enter Your CIE2 Mark" id="CIE2">
+            <input type="number"class="input-box" placeholder="Enter Your CIE3 Mark" id="CIE3">
+            <input type="number"class="input-box" placeholder="Enter your Moodle Mark Out of 6" id="Moodle">
+            <input type="number"class="input-box" placeholder="Enter Your Assignment Mark Out Of 5" id="Assignment mark">
 
-            <input type="text" class="input-box" placeholder="Enter Your Attendance Mark" id="attendance">
-            <button type="submit" onclick="convert()">CALCULATE</button> 
+            <input type="text" class="input-box" placeholder="Enter Your Attendance Mark Out Of 5" id="attendance">
+        
+            <button type="button" onclick="convert()">CALCULATE</button> 
+            <div id="result" class="result"></div>
         </div>
-        <div id="result"></div>
-    </div>
-    
-
-
-
     </div>
 </body>
 </html>
