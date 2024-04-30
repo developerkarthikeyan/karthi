@@ -10,9 +10,11 @@ function convert(){
     let cie2o=(cie2/50)*8
     let cie3o=(cie3/50)*8
     let final=cie1o+cie2o+cie3o+moodle+assignment+attendance
+    let total=final.toFixed(2)
     let result=document.getElementById("result")
     let span=document.createElement('p');
-
+    console.log(span)
     result.appendChild(span);
-    span.innerText="Your Internal Mark is :"+final;
+    span.innerText="Your  Internal Mark is :"+total;
+    console.log(total)
     }
