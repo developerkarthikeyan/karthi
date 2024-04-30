@@ -15,9 +15,12 @@ span{
     flex-direction: column;
     align-items: center;
     padding: 20px;
-   
-    width: 450px;
+    width: 550px;
     height: 100vh;
+    background: linear-gradient(to bottom, #6a52a5, #4c5f93);
+    
+position: relative;
+left: 30%;
 }
 
 .title {
@@ -28,11 +31,9 @@ span{
 
 .input-container {
     display: flex;
-    flex-direction: column; /* Change from 'row' to 'column' */
+    flex-direction: column; 
     gap: 10px;
      padding: 40px;
-     width: 100vw;
-     height: 100vh;
 align-items: center;
 position: absolute;
 left: -5%;
@@ -91,8 +92,8 @@ p{
      margin-left: 1rem;
     }
     .input-container{
-        margin-left: -8.6rem;
-        left: 25%;
+        margin-left:0;
+        left: -25%;
     }
     button{
         margin-top: 1rem;
@@ -103,7 +104,7 @@ p{
      position: absolute;
  top: 720px;
  margin-top: 2rem;
- left:24% ;
+ left:15% ;
  font-size: 1.5rem;
     }
 }
