@@ -2,6 +2,7 @@
     *{
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
 
 
@@ -54,15 +55,14 @@ align-items: center;
 }
 
 .input-box {
-    margin-top: 10px; 
+    margin-top: 12px; 
     width: 100%;
-    height: 30px;
+    height: 35px;
     padding: 10px;
     border: 1px solid #ccc;
     animation: slideIn 0.5s ease-out;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
+
 }
 
 @keyframes slideIn {
